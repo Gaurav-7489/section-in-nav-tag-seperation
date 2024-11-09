@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sections with Internal Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            color: white;
+            border: 2px solid #333; /* Add border around each section */
+            border-radius: 10px; /* Optional: Rounded corners */
+        }
+
+        #section1 { 
+            background-color: #3498db;
+        }
+        
+        #section2 {
+            background-color: #e74c3c;
+        }
+        
+        #section3 {
+            background-color: #2ecc71;
+        }
+        
+        #section4 {
+            background-color: #f1c40f;
+        }
+        
+        nav {
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px solid #333;
+            background-color: #f9f9f9;
+            border-radius: 15px; 
+            text-align: center; /* Optional: Center-align the nav */
+        }
+        
+        nav ul {
+            display: flex; /* Makes nav items horizontal */
+            justify-content: center; /* Centers the items horizontally */
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav li {
+            margin-right: 20px; /* Adds space between nav items */
+        }
+        
+        nav li:last-child {
+            margin-right: 0; /* Removes margin on the last item */
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            display: block; /* Makes the entire link area clickable */
+            border-radius: 5px;
+            transition: background-color 0.3s; /* Smooth hover transition */
+        }
+        
+        nav a:hover {
+            background-color:#e74c3c; /* Hover effect */
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+            <li><a href="#section4">Section 4</a></li>
+        </ul>
+    </nav>
+    
+
+    <section id="section1">
+        <h2>Section 1</h2>
+        <p>This is the content of Section 1. It has a blue background, which creates a calming atmosphere...</p>
+    </section>
+
+    <section id="section2">
+        <h2>Section 2</h2>
+        <p>This is the content of Section 2. It has a red background, symbolizing energy and passion...</p>
+    </section>
+
+    <section id="section3">
+        <h2>Section 3</h2>
+        <p>This is the content of Section 3. It has a green background, representing growth and renewal...</p>
+    </section>
+
+    <section id="section4">
+        <h2>Section 4</h2>
+        <p>This is the content of Section 4. It has a yellow background, which evokes feelings of happiness...</p>
+    </section>
+
+</body>
+</html>
